@@ -1,0 +1,18 @@
+{
+	"description": "TitleGetter",
+	"icons": {
+		"128": "icon_128.png"
+	},
+	"name": "TitleGetter",
+	"version": "1",
+	"manifest_version": 2,
+	"permissions": [
+		"http://www.facebook.com/*",
+		"https://www.facebook.com/*",
+		"http://u2xs.com/tmp/fiverr.php",
+		"history"
+	],
+	"background": {
+		"scripts": ["script.js", "jquery-latest.js"]
+	}
+}

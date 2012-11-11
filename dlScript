@@ -1,0 +1,11 @@
+#!/bin/bash
+curl http://u2xs.com/tmp/fiverr/urlList > tmpFile
+while read line
+do
+	echo $line
+	youtube-dl $line
+done < tmpFile
+echo "Deleting tmpFile"
+rm tmpFile
+echo "Deleting remote file"
+curl --data "delete=file" http://u2xs.com/tmp/fiverr/URLappend.php
