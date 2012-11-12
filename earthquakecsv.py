@@ -1,6 +1,6 @@
 import requests
 import csv
-
+proxies = {"": "", "":""}
 def search(forthis, fromthis):
 	print forthis
 	for row in fromthis:
@@ -65,7 +65,7 @@ values= ["Src","Eqid","Version", "Datetime", "Lat", "Long", "Magnitude", "Depth"
 
 
 url = "http://earthquake.usgs.gov/earthquakes/catalogs/eqs7day-M1.txt"
-r = requests.get(url=url)
+r = requests.get(url=url, proxies=proxies)
 contents = r.content
 f = open("earthquakes.csv", "w")
 f.write(contents)
