@@ -1,0 +1,21 @@
+{
+	"description": "ContentScraper",
+	"icons": {
+		"128": "icon_128.png"
+	},
+	"name": "ContentScraper",
+	"version": "1",
+	"manifest_version": 2,
+	"permissions": [
+		"http://*/*",
+		"https://*/*",
+		"tabs"
+	],
+	"background": {
+		"scripts": ["background.js", "jquery-latest.js"]
+	},
+	"page_action": {
+		"default_title": "ContentScaper",
+		"defualt_icon": "icon_19.png"
+	}
+}

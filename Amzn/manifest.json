@@ -1,0 +1,20 @@
+{
+	"description": "AmazonWishList",
+	"icons": {
+		"128": "icon_128.png"
+	},
+	"name": "AmazonWishList",
+	"version": "1",
+	"manifest_version": 2,
+	"permissions": [
+		"http://www.amazon.com/*",
+		"https://www.amazon.com/*",
+		"tabs"
+	],
+	"background": {
+		"scripts": ["background.js", "jquery-latest.js"]
+	},
+	"page_action": {
+		"default_title": "AmazonWishList"
+	}
+}
